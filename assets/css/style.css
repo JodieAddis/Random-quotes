@@ -6,17 +6,93 @@
   font-family: dosis;
   src: url(../font/Dosis/Dosis-VariableFont_wght.ttf);
 }
+@media screen and (min-width: 1440px) {
+  body {
+    background-size: cover;
+    font-family: dancing;
+  }
+  body header {
+    background-color: rgba(2, 13, 35, 0.7);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  body header h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 35px;
+    padding: 20px 0 20px 0;
+  }
+  body main {
+    padding-bottom: 50px;
+  }
+  body main .quotes {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: rgba(2, 13, 35, 0.7);
+    font-size: 15px;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 20px 30px 20px;
+    border-radius: 0 100px 0 100px;
+    height: 500px;
+    overflow: hidden;
+  }
+  body main .quotes .quotes_author {
+    margin-top: 40px;
+  }
+  body main .quotes .quotes_author img {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 100%;
+    border: rgb(255, 255, 255) solid 1px;
+  }
+  body main .quotes .quotes_display {
+    margin: 25px 20px 10px 20px;
+  }
+  body main .quotes .quotes_display .quotes_display_author {
+    margin: 20px 0 30px 0;
+  }
+  body main .quotes .quotes_button button {
+    background-color: rgb(2, 13, 35);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: dancing;
+    font-size: 20px;
+    border: rgb(255, 255, 255) solid 1px;
+    border-radius: 20px;
+    padding: 2px 10px 2px 10px;
+  }
+  body main .quotes .quotes_button button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(2, 13, 35);
+  }
+  body footer {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: rgba(2, 13, 35, 0.7);
+    font-size: 15px;
+    line-height: 1.5;
+    font-size: 12px;
+    padding: 15px 0 15px 0;
+  }
+  body footer .professional_profil {
+    margin-top: 10px;
+    width: 200px;
+  }
+}
 html {
   width: 100%;
   height: auto;
 }
 html body {
   background-image: url("../img/wallpaperflare.com_wallpaper.jpg");
-  background-color: rgb(2, 13, 35);
+  background-size: cover;
   font-family: dancing;
 }
 html body header {
-  background-color: rgb(2, 13, 35);
+  background-color: rgba(2, 13, 35, 0.7);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -27,7 +103,10 @@ html body header h1 {
   font-size: 35px;
   padding: 20px 0 20px 0;
 }
-html body .quotes {
+html body main {
+  padding-bottom: 50px;
+}
+html body main .quotes {
   color: rgb(255, 255, 255);
   text-align: center;
   background-color: rgba(2, 13, 35, 0.7);
@@ -40,22 +119,22 @@ html body .quotes {
   height: 500px;
   overflow: hidden;
 }
-html body .quotes .quotes_author {
-  margin-top: 20px;
+html body main .quotes .quotes_author {
+  margin-top: 40px;
 }
-html body .quotes .quotes_author img {
+html body main .quotes .quotes_author img {
   width: 12rem;
   height: 12rem;
   border-radius: 100%;
   border: rgb(255, 255, 255) solid 1px;
 }
-html body .quotes .quotes_display {
+html body main .quotes .quotes_display {
   margin: 25px 20px 10px 20px;
 }
-html body .quotes .quotes_display .quotes_display_author {
+html body main .quotes .quotes_display .quotes_display_author {
   margin: 20px 0 30px 0;
 }
-html body .quotes .quotes_button button {
+html body main .quotes .quotes_button button {
   background-color: rgb(2, 13, 35);
   color: rgb(255, 255, 255);
   text-align: center;
@@ -65,7 +144,20 @@ html body .quotes .quotes_button button {
   border-radius: 20px;
   padding: 2px 10px 2px 10px;
 }
-html body .quotes .quotes_button button:hover {
+html body main .quotes .quotes_button button:hover {
   background-color: rgb(255, 255, 255);
   color: rgb(2, 13, 35);
+}
+html body footer {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  background-color: rgba(2, 13, 35, 0.7);
+  font-size: 15px;
+  line-height: 1.5;
+  font-size: 12px;
+  padding: 15px 0 15px 0;
+}
+html body footer .professional_profil {
+  margin-top: 10px;
+  width: 200px;
 }/*# sourceMappingURL=style.css.map */

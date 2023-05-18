@@ -1,19 +1,6 @@
-@import './variables.scss';
-@import './mixin.scss'; 
-@import './media.scss'; 
-
-html{
-    width: 100%;
-    height: auto;
+@media screen and (min-width : 1440px) {
     body{
-        background-image: url("../img/wallpaperflare.com_wallpaper.jpg");
-        background-size: cover;
-        font-family: dancing;
         header{
-            background-color: $mainColor; 
-            @media (min-width: $large) {
-                background-color: yellow;;
-                }
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -26,15 +13,12 @@ html{
             padding-bottom: 50px;
             .quotes{
                 @include quotes; 
-                display: flex;
-                flex-direction: column;
-                @media screen and (min-width: $large) {
-                    flex-direction: row;
-                    }
+                font-size: 20px;
+                flex-direction: row;
                 margin: 50px 20px 30px 20px;
                 border-radius: 0 100px 0 100px;
-                height: 500px;
-                overflow: hidden;
+                height: 400px;
+                width: 600px;
                 .quotes_author{
                     margin-top: 40px;
                     img{
@@ -61,7 +45,7 @@ html{
         }
         footer{
             @include quotes; 
-            font-size:12px; 
+            font-size:20px; 
             padding:15px 0 15px 0;
             .professional_profil{
                 margin-top: 10px;
@@ -69,11 +53,4 @@ html{
             }
         }
     }
-}
-
-@include media(1440px); 
-
-
-@media screen and (min-width: $large) {
-//do Smth
 }

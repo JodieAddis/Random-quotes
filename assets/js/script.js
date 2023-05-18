@@ -20,3 +20,6 @@ const quotes = async () => {
 }
 
 quotes(); 
+
+const btn = document.querySelector('.quotes_button'); 
+btn.addEventListener('click', quotes); 

@@ -14,6 +14,7 @@
     text-align: center;
     font-size: 35px;
 }
+
 @mixin quotes {
     color: $colorTxt;
     text-align: center;
@@ -21,6 +22,14 @@
     font-size: 15px;
     line-height: 1.5;
 }
+
+@mixin img {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 100%;
+    border: $colorTxt solid 1px;
+}
+
 @mixin button {
     background-color: $backColor;
     color:$colorTxt; 
