@@ -7,6 +7,7 @@ const quotes = async () => {
         let picture = await res.photo;
         let author = await res.author; 
         document.querySelector('.quotes_author_img').src = picture; 
+        document.querySelector('.quotes_author_img').alt = "Random picture of somebody, from a free API"; 
         document.querySelector('.quotes_display_text').innerHTML=quote; 
         document.querySelector('.quotes_display_author').innerHTML=author; 
     } catch {

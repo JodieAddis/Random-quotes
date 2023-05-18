@@ -1,0 +1,71 @@
+@font-face {
+  font-family: dancing;
+  src: url(../font/Dancing_Script/DancingScript-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: dosis;
+  src: url(../font/Dosis/Dosis-VariableFont_wght.ttf);
+}
+html {
+  width: 100%;
+  height: auto;
+}
+html body {
+  background-image: url("../img/wallpaperflare.com_wallpaper.jpg");
+  background-color: rgb(2, 13, 35);
+  font-family: dancing;
+}
+html body header {
+  background-color: rgb(2, 13, 35);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+html body header h1 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 35px;
+  padding: 20px 0 20px 0;
+}
+html body .quotes {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  background-color: rgba(2, 13, 35, 0.7);
+  font-size: 15px;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  margin: 50px 20px 30px 20px;
+  border-radius: 0 100px 0 100px;
+  height: 500px;
+  overflow: hidden;
+}
+html body .quotes .quotes_author {
+  margin-top: 20px;
+}
+html body .quotes .quotes_author img {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 100%;
+  border: rgb(255, 255, 255) solid 1px;
+}
+html body .quotes .quotes_display {
+  margin: 25px 20px 10px 20px;
+}
+html body .quotes .quotes_display .quotes_display_author {
+  margin: 20px 0 30px 0;
+}
+html body .quotes .quotes_button button {
+  background-color: rgb(2, 13, 35);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: dancing;
+  font-size: 20px;
+  border: rgb(255, 255, 255) solid 1px;
+  border-radius: 20px;
+  padding: 2px 10px 2px 10px;
+}
+html body .quotes .quotes_button button:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(2, 13, 35);
+}/*# sourceMappingURL=style.css.map */

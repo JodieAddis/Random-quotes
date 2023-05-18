@@ -1,0 +1,32 @@
+@import './variables.scss';
+
+@font-face {
+    font-family: dancing;
+    src: url(../font/Dancing_Script/DancingScript-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: dosis;
+    src: url(../font/Dosis/Dosis-VariableFont_wght.ttf);
+}
+
+@mixin title {
+    color: $colorTxt;
+    text-align: center;
+    font-size: 35px;
+}
+@mixin quotes {
+    color: $colorTxt;
+    text-align: center;
+    background-color: $mainColor;
+    font-size: 15px;
+    line-height: 1.5;
+}
+@mixin button {
+    background-color: $backColor;
+    color:$colorTxt; 
+    text-align: center;
+    font-family: dancing;
+    font-size: 20px;
+    border: $colorTxt solid 1px;
+    border-radius: 20px;
+}
