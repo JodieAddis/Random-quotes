@@ -30,12 +30,13 @@ html body header h1 {
 }
 html body main {
   padding-bottom: 20px;
+  height: 700px;
 }
 @media screen and (min-width: 1000px) {
   html body main {
     display: flex;
     justify-content: center;
-    height: 550px;
+    height: 600px;
     padding-bottom: 0;
   }
 }
