@@ -5,8 +5,8 @@
     src: url(../font/Dancing_Script/DancingScript-VariableFont_wght.ttf);
 }
 @font-face {
-    font-family: dosis;
-    src: url(../font/Dosis/Dosis-VariableFont_wght.ttf);
+    font-family: open;
+    src: url(../font/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
 }
 
 @mixin title {
@@ -17,10 +17,13 @@
 
 @mixin quotes {
     color: $colorTxt;
+    backdrop-filter: blur(10px);
     text-align: center;
     background-color: $mainColor;
-    font-size: 15px;
+    border: $backColor solid 1px;
+    font-size: 18px;
     line-height: 1.5;
+    font-weight: 200;
 }
 
 @mixin img {
@@ -38,4 +41,13 @@
     font-size: 20px;
     border: $colorTxt solid 1px;
     border-radius: 20px;
+}
+
+@mixin footer {
+    color: $colorTxt;
+    text-align: center;
+    background-color: $backColor;
+    font-family: open;
+    font-size: 12px;
+    font-weight: 100;
 }

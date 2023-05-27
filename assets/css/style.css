@@ -3,16 +3,11 @@
   src: url(../font/Dancing_Script/DancingScript-VariableFont_wght.ttf);
 }
 @font-face {
-  font-family: dosis;
-  src: url(../font/Dosis/Dosis-VariableFont_wght.ttf);
+  font-family: open;
+  src: url(../font/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
 }
 @media screen and (min-width: 1440px) {
-  body {
-    background-size: cover;
-    font-family: dancing;
-  }
   body header {
-    background-color: rgba(2, 13, 35, 0.7);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -28,16 +23,19 @@
   }
   body main .quotes {
     color: rgb(255, 255, 255);
+    backdrop-filter: blur(10px);
     text-align: center;
     background-color: rgba(2, 13, 35, 0.7);
-    font-size: 15px;
+    border: rgb(2, 13, 35) solid 1px;
+    font-size: 18px;
     line-height: 1.5;
-    display: flex;
-    flex-direction: column;
+    font-weight: 200;
+    font-size: 20px;
+    flex-direction: row;
     margin: 50px 20px 30px 20px;
     border-radius: 0 100px 0 100px;
-    height: 500px;
-    overflow: hidden;
+    height: 400px;
+    width: 600px;
   }
   body main .quotes .quotes_author {
     margin-top: 40px;
@@ -70,11 +68,14 @@
   }
   body footer {
     color: rgb(255, 255, 255);
+    backdrop-filter: blur(10px);
     text-align: center;
     background-color: rgba(2, 13, 35, 0.7);
-    font-size: 15px;
+    border: rgb(2, 13, 35) solid 1px;
+    font-size: 18px;
     line-height: 1.5;
-    font-size: 12px;
+    font-weight: 200;
+    font-size: 20px;
     padding: 15px 0 15px 0;
   }
   body footer .professional_profil {
@@ -85,6 +86,7 @@
 html {
   width: 100%;
   height: auto;
+  margin: 0 auto;
 }
 html body {
   background-image: url("../img/wallpaperflare.com_wallpaper.jpg");
@@ -92,7 +94,7 @@ html body {
   font-family: dancing;
 }
 html body header {
-  background-color: rgba(2, 13, 35, 0.7);
+  background-color: rgb(2, 13, 35);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -104,20 +106,37 @@ html body header h1 {
   padding: 20px 0 20px 0;
 }
 html body main {
-  padding-bottom: 50px;
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 1000px) {
+  html body main {
+    display: flex;
+    justify-content: center;
+  }
 }
 html body main .quotes {
   color: rgb(255, 255, 255);
+  backdrop-filter: blur(10px);
   text-align: center;
   background-color: rgba(2, 13, 35, 0.7);
-  font-size: 15px;
+  border: rgb(2, 13, 35) solid 1px;
+  font-size: 18px;
   line-height: 1.5;
+  font-weight: 200;
   display: flex;
   flex-direction: column;
   margin: 50px 20px 30px 20px;
   border-radius: 0 100px 0 100px;
   height: 500px;
   overflow: hidden;
+}
+@media screen and (min-width: 1000px) {
+  html body main .quotes {
+    flex-direction: row;
+    align-items: center;
+    height: 300px;
+    width: 700px;
+  }
 }
 html body main .quotes .quotes_author {
   margin-top: 40px;
@@ -128,8 +147,21 @@ html body main .quotes .quotes_author img {
   border-radius: 100%;
   border: rgb(255, 255, 255) solid 1px;
 }
+@media screen and (min-width: 1000px) {
+  html body main .quotes .quotes_author {
+    margin-left: 30px;
+    margin-top: 0;
+  }
+  html body main .quotes .quotes_author img {
+    width: 10rem;
+    height: 10rem;
+  }
+}
 html body main .quotes .quotes_display {
   margin: 25px 20px 10px 20px;
+}
+html body main .quotes .quotes_display q {
+  width: auto;
 }
 html body main .quotes .quotes_display .quotes_display_author {
   margin: 20px 0 30px 0;
@@ -147,17 +179,25 @@ html body main .quotes .quotes_button button {
 html body main .quotes .quotes_button button:hover {
   background-color: rgb(255, 255, 255);
   color: rgb(2, 13, 35);
+  font-weight: 900;
 }
 html body footer {
   color: rgb(255, 255, 255);
   text-align: center;
-  background-color: rgba(2, 13, 35, 0.7);
-  font-size: 15px;
-  line-height: 1.5;
+  background-color: rgb(2, 13, 35);
+  font-family: open;
+  font-size: 12px;
+  font-weight: 100;
   font-size: 12px;
   padding: 15px 0 15px 0;
 }
-html body footer .professional_profil {
-  margin-top: 10px;
-  width: 200px;
+html body footer a {
+  margin: 0 5px 0 5px;
+}
+html body footer .icon {
+  margin-top: 20px;
+  filter: invert(100%) sepia(7%) saturate(1%) hue-rotate(60deg) brightness(106%) contrast(100%);
+}
+html body footer .icon:hover {
+  filter: invert(100%) sepia(44%) saturate(3315%) hue-rotate(48deg) brightness(99%) contrast(97%);
 }/*# sourceMappingURL=style.css.map */
