@@ -6,92 +6,15 @@
   font-family: open;
   src: url(../font/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
 }
-@media screen and (min-width: 1440px) {
-  body header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  body header h1 {
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-size: 35px;
-    padding: 20px 0 20px 0;
-  }
-  body main {
-    padding-bottom: 50px;
-  }
-  body main .quotes {
-    color: rgb(255, 255, 255);
-    backdrop-filter: blur(10px);
-    text-align: center;
-    background-color: rgba(2, 13, 35, 0.7);
-    border: rgb(2, 13, 35) solid 1px;
-    font-size: 18px;
-    line-height: 1.5;
-    font-weight: 200;
-    font-size: 20px;
-    flex-direction: row;
-    margin: 50px 20px 30px 20px;
-    border-radius: 0 100px 0 100px;
-    height: 400px;
-    width: 600px;
-  }
-  body main .quotes .quotes_author {
-    margin-top: 40px;
-  }
-  body main .quotes .quotes_author img {
-    width: 12rem;
-    height: 12rem;
-    border-radius: 100%;
-    border: rgb(255, 255, 255) solid 1px;
-  }
-  body main .quotes .quotes_display {
-    margin: 25px 20px 10px 20px;
-  }
-  body main .quotes .quotes_display .quotes_display_author {
-    margin: 20px 0 30px 0;
-  }
-  body main .quotes .quotes_button button {
-    background-color: rgb(2, 13, 35);
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-family: dancing;
-    font-size: 20px;
-    border: rgb(255, 255, 255) solid 1px;
-    border-radius: 20px;
-    padding: 2px 10px 2px 10px;
-  }
-  body main .quotes .quotes_button button:hover {
-    background-color: rgb(255, 255, 255);
-    color: rgb(2, 13, 35);
-  }
-  body footer {
-    color: rgb(255, 255, 255);
-    backdrop-filter: blur(10px);
-    text-align: center;
-    background-color: rgba(2, 13, 35, 0.7);
-    border: rgb(2, 13, 35) solid 1px;
-    font-size: 18px;
-    line-height: 1.5;
-    font-weight: 200;
-    font-size: 20px;
-    padding: 15px 0 15px 0;
-  }
-  body footer .professional_profil {
-    margin-top: 10px;
-    width: 200px;
-  }
-}
 html {
   width: 100%;
   height: auto;
-  margin: 0 auto;
 }
 html body {
   background-image: url("../img/wallpaperflare.com_wallpaper.jpg");
   background-size: cover;
   font-family: dancing;
+  height: 100%;
 }
 html body header {
   background-color: rgb(2, 13, 35);
@@ -112,6 +35,8 @@ html body main {
   html body main {
     display: flex;
     justify-content: center;
+    height: 550px;
+    padding-bottom: 0;
   }
 }
 html body main .quotes {
@@ -127,15 +52,16 @@ html body main .quotes {
   flex-direction: column;
   margin: 50px 20px 30px 20px;
   border-radius: 0 100px 0 100px;
-  height: 500px;
   overflow: hidden;
 }
 @media screen and (min-width: 1000px) {
   html body main .quotes {
     flex-direction: row;
     align-items: center;
-    height: 300px;
+    justify-content: center;
+    height: 350px;
     width: 700px;
+    margin: 100px 20px 30px 20px;
   }
 }
 html body main .quotes .quotes_author {
@@ -150,23 +76,30 @@ html body main .quotes .quotes_author img {
 @media screen and (min-width: 1000px) {
   html body main .quotes .quotes_author {
     margin-left: 30px;
-    margin-top: 0;
   }
   html body main .quotes .quotes_author img {
     width: 10rem;
     height: 10rem;
   }
 }
-html body main .quotes .quotes_display {
+@media screen and (min-width: 1000px) {
+  html body main .quotes .quotes_txt {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 30px;
+  }
+}
+html body main .quotes .quotes_txt .quotes_display {
   margin: 25px 20px 10px 20px;
 }
-html body main .quotes .quotes_display q {
+html body main .quotes .quotes_txt .quotes_display q {
   width: auto;
 }
-html body main .quotes .quotes_display .quotes_display_author {
+html body main .quotes .quotes_txt .quotes_display .quotes_display_author {
   margin: 20px 0 30px 0;
 }
-html body main .quotes .quotes_button button {
+html body main .quotes .quotes_txt .quotes_button button {
   background-color: rgb(2, 13, 35);
   color: rgb(255, 255, 255);
   text-align: center;
@@ -176,7 +109,7 @@ html body main .quotes .quotes_button button {
   border-radius: 20px;
   padding: 2px 10px 2px 10px;
 }
-html body main .quotes .quotes_button button:hover {
+html body main .quotes .quotes_txt .quotes_button button:hover {
   background-color: rgb(255, 255, 255);
   color: rgb(2, 13, 35);
   font-weight: 900;
@@ -200,4 +133,9 @@ html body footer .icon {
 }
 html body footer .icon:hover {
   filter: invert(100%) sepia(44%) saturate(3315%) hue-rotate(48deg) brightness(99%) contrast(97%);
+}
+@media screen and (min-width: 1000px) {
+  html body footer p {
+    font-size: 10px;
+  }
 }/*# sourceMappingURL=style.css.map */
